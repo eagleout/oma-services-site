@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Dev (Vite)",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": ["-c", "cd /tmp/oma-services && exec node_modules/.bin/vite --host"],
+      "port": 3000
+    },
+    {
+      "name": "Preview (build)",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": ["-c", "cd /tmp/oma-services && exec node_modules/.bin/vite preview --host"],
+      "port": 4173
+    }
+  ]
+}
